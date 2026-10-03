@@ -1,0 +1,56 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.egg-info/
+build/
+dist/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local datasets; retain only dataset guidance
+/data/*
+!/data/README.md
+*.nii
+*.nii.gz
+*.dcm
+*.parquet
+
+# Runtime artifacts
+runtime/
+artifacts/
+logs/
+*.log
+mlruns/
+mlartifacts/
+airflow/logs/
+airflow/airflow.cfg
+airflow/airflow.db
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local cloud credential files
+application_default_credentials.json
+*-service-account.json
